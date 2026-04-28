@@ -1,0 +1,35 @@
+.whatsappFloat {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--whatsapp);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  text-decoration: none;
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+  animation: pulse 2.5s infinite;
+  transition: transform 0.2s;
+}
+
+.whatsappFloat:hover {
+  transform: scale(1.08);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(37, 211, 102, 0.5),
+      0 8px 30px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow:
+      0 0 0 14px rgba(37, 211, 102, 0),
+      0 8px 30px rgba(37, 211, 102, 0.4);
+  }
+}

@@ -1,0 +1,223 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 140px 0 80px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background:
+    radial-gradient(circle at 80% 30%, rgba(249, 115, 22, 0.12), transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(239, 68, 68, 0.06), transparent 50%),
+    var(--bg);
+}
+
+/* Carbon fiber texture */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(45deg, rgba(255, 255, 255, 0.015) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255, 255, 255, 0.015) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(255, 255, 255, 0.015) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(255, 255, 255, 0.015) 75%);
+  background-size: 4px 4px;
+  background-position:
+    0 0,
+    0 2px,
+    2px -2px,
+    -2px 0px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Grid overlay */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 80px 80px;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+}
+
+.heroInner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.heroContent{
+  margin-top: 0;
+}
+
+.heroContent :global(.kicker) {
+  margin-bottom: 24px;
+}
+
+.heroTitle {
+  font-size: clamp(52px, 8vw, 96px);
+  line-height: 0.95;
+  margin-bottom: 24px;
+}
+
+.lineAccent {
+  color: var(--accent);
+  position: relative;
+  display: inline-block;
+}
+
+.lineAccent::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 4px;
+  background: var(--accent);
+  box-shadow: 0 0 20px var(--accent);
+}
+
+.lead {
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 520px;
+  margin-bottom: 40px;
+  line-height: 1.65;
+}
+
+.heroCtas {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.heroVisual {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #262626;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+}
+
+.heroImage {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to bottom, transparent 40%, rgba(13, 13, 13, 0.9) 100%),
+    url("/interior-loja.webp");
+  background-size: cover;
+  background-position: center;
+  filter: contrast(1.1) saturate(0.85);
+}
+
+.heroVisual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 50%, rgba(249, 115, 22, 0.15) 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+
+.heroBadge {
+  position: absolute;
+  bottom: 4px;
+  left: 24px;
+  right: 24px;
+  z-index: 3;
+  background: rgba(13, 13, 13, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid #262626;
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+@media (min-width: 768px){
+ 
+  .heroBadge {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    right: 24px;
+    z-index: 3;
+    background: rgba(13, 13, 13, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid #262626;
+    border-radius: 12px;
+    padding: 20px 22px;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .heroInner {
+    align-items: start;
+  }
+
+  .heroContent{
+    margin-top: 3em;
+  }
+
+}
+
+.heroBadgeIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.heroBadgeText{
+  display: flex;
+  flex-direction: column;
+}
+
+.heroBadgeText strong {
+  display: block;
+  font-family: var(--display);
+  font-size: 22px;
+  letter-spacing: 0.04em;
+}
+
+.heroBadgeText span {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.stackIcon{
+  color: #0d0d0d;
+  font-size: 1.8em;
+}
+
+@media (max-width: 900px) {
+  .heroInner {
+    grid-template-columns: 1fr;
+  }
+  .heroVisual {
+    aspect-ratio: 1;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 120px 0 60px;
+  }
+}
