@@ -62,6 +62,18 @@ const services = [
     title: "Chapeação",
     description: "Reparo de lataria, funilaria e correção de avarias, seu carro como saiu da concessionária.",
   },
+  {
+    id: "09",
+    Icon: Hammer,
+    title: "Troca de Pneus & Rodas",
+    description: "Pneus de marcas reconhecidas, montagem com balanceamento incluso e variedade de rodas esportivas.",
+  },
+  {
+    id: "10",
+    Icon: Hammer,
+    title: "Revisão Preventiva",
+    description: "Checklist completo de itens críticos antes de viagens, com laudo escrito e fotos do diagnóstico.",
+  },
 ];
 
 export default function Services() {

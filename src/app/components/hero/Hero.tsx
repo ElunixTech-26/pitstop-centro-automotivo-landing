@@ -14,8 +14,7 @@ export default function Hero() {
             Seu Carro Merece <span className={styles.lineAccent}>Mãos Especialistas</span>
           </h1>
           <p className={styles.lead}>
-            Suspensão, freios, motor e alinhamento. Atendimento especializado para veículos
-            nacionais e importados, com diagnóstico preciso e peças de confiança.
+            Centro automotivo em Canoas desde 1983. Mecânica geral, suspensão, freios, alinhamento e troca de pneus para carros nacionais e importados, com diagnóstico preciso e orçamento transparente.
           </p>
           <div className={styles.heroCtas}>
             <a   

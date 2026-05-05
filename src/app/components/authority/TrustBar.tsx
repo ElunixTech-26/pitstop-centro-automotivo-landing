@@ -5,10 +5,10 @@ import styles from "./TrustBar.module.css";
 import { CarFront, Clock, File, FileEarmark, FileEarmarkText, People } from "react-bootstrap-icons";
 
 const items = [
-  { Icon: Clock, number: "39+", label: "Anos de Experiência" },
+  { Icon: Clock, number: "40+", label: "Anos de Experiência" },
   { Icon: CarFront, number: "Nacionais", label: "& Importados" },
   { Icon: People, number: "Equipe", label: "Qualificada" },
-  { Icon: FileEarmarkText, number: "Orçamento", label: "Transparente" },
+  { Icon: FileEarmarkText, number: "Garantia", label: "Em todo serviço" },
 ];
 
 export default function TrustBar() {
