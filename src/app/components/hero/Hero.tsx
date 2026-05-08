@@ -1,7 +1,7 @@
 import Link from "next/link";
 import {  WhatsAppIcon } from "../icons";
 import styles from "./Hero.module.css";
-import { ArrowRight, Layers, Stack } from "react-bootstrap-icons";
+import { ArrowRight, Layers } from "react-bootstrap-icons";
 import { WHATSAPP_URL } from "@/app/lib/constants";
 
 export default function Hero() {

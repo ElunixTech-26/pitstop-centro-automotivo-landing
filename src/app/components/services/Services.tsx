@@ -8,14 +8,12 @@ import {
   Bullseye,
   CarFront,
   Compass,
-  DashCircleDotted,
-  GearWideConnected,
+   GearWideConnected,
   Hammer,
   LightningChargeFill,
   RecordCircle,
   ShieldCheck,
-  Speedometer2,
-} from "react-bootstrap-icons";
+ } from "react-bootstrap-icons";
 import styles from "./Services.module.css";
 
 const services = [

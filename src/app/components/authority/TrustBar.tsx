@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import styles from "./TrustBar.module.css";
-import { CarFront, Clock, File, FileEarmark, FileEarmarkText, People } from "react-bootstrap-icons";
+import { CarFront, Clock, FileEarmarkText, People } from "react-bootstrap-icons";
 
 const items = [
   { Icon: Clock, number: "40+", label: "Anos de Experiência" },

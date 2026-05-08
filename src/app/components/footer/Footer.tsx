@@ -1,14 +1,14 @@
 import Link from "next/link";
-import { FacebookIcon, InstagramIcon, WhatsAppIcon } from "../icons";
+import { FacebookIcon, WhatsAppIcon } from "../icons";
 import styles from "./Footer.module.css";
 import { SITE_CONFIG, WHATSAPP_URL } from "../../lib/constants";
-import { Envelope, GeoAlt, GeoAltFill, Phone, Telephone } from "react-bootstrap-icons";
+import { Envelope, GeoAlt, Telephone } from "react-bootstrap-icons";
 import Image from "next/image";
 
 const servicesLinks = [
   { label: "Suspensão", href: "#servicos" },
   { label: "Freios", href: "#servicos" },
-  { label: "Motor", href: "#servicos" },
+  { label: "Pneus", href: "#servicos" },
   { label: "Alinhamento", href: "#servicos" },
   { label: "Elétrica", href: "#servicos" },
 ];
@@ -27,7 +27,7 @@ export default function Footer() {
         <div className={styles.footerGrid}>
           <div className={styles.footerBrand}>
             <div className={styles.logo}>
-              <Image src={'/graph-image.png'} alt="" width={100} height={50}/>
+            <Image src={'/graph-image.png'} alt="Pit Stop Centro Automotivo" width={100} height={50}/>
             </div>
             {/* <div className={styles.logo}>
               <span className={styles.logoDot} />

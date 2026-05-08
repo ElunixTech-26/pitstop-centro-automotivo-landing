@@ -97,7 +97,7 @@ export const localBusinessSchema = {
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": -29.9069015,
-    "longitude": -51.1799094
+    "longitude": -51.1773291
   },
   "openingHoursSpecification": [
     {
@@ -135,10 +135,14 @@ export const localBusinessSchema = {
     "itemListElement": [
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mecânica de Suspensão" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistema de Freios" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparo de Motor" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Conserto de Pneus Cortados" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Troca de Correias" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Alinhamento e Balanceamento" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Elétrica Automotiva" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Troca de Pneus e Rodas" } }
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pintura Automotiva" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Chapeação e Funilaria" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Troca de Pneus e Rodas" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Revisão Preventiva" } }
     ]
   }
 };
