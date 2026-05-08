@@ -25,10 +25,10 @@ export default function FinalCta() {
             Chamar no WhatsApp
           </a>
           <div className={styles.ctaInfo}>
-            <div className={styles.ctaInfoItem}>
+            <a href={`tel:${SITE_CONFIG.phone}`} className={styles.ctaInfoItem}>
               <Phone />
               {SITE_CONFIG.phone}
-            </div>
+            </a>
             <div className={styles.ctaInfoItem}>
               <Map width={18} height={18} />
               {SITE_CONFIG.location}

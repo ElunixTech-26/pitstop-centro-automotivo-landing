@@ -3,6 +3,7 @@ import { FacebookIcon, InstagramIcon, WhatsAppIcon } from "../icons";
 import styles from "./Footer.module.css";
 import { SITE_CONFIG, WHATSAPP_URL } from "../../lib/constants";
 import { Envelope, GeoAlt, GeoAltFill, Phone, Telephone } from "react-bootstrap-icons";
+import Image from "next/image";
 
 const servicesLinks = [
   { label: "Suspensão", href: "#servicos" },
@@ -26,9 +27,12 @@ export default function Footer() {
         <div className={styles.footerGrid}>
           <div className={styles.footerBrand}>
             <div className={styles.logo}>
+              <Image src={'/graph-image.png'} alt="" width={100} height={50}/>
+            </div>
+            {/* <div className={styles.logo}>
               <span className={styles.logoDot} />
               {SITE_CONFIG.shortName}
-            </div>
+            </div> */}
             <p>
               Centro automotivo especializado em veículos nacionais e importados. Qualidade
               técnica, atendimento humano e confiança em cada reparo.
@@ -82,9 +86,9 @@ export default function Footer() {
             © {new Date().getFullYear()} {SITE_CONFIG.name} · Todos os direitos reservados
           </div>
           <div className={styles.socials}>
-            <a href="#" className={styles.socialLink} aria-label="Instagram">
+            {/* <a href="#" className={styles.socialLink} aria-label="Instagram">
               <InstagramIcon />
-            </a>
+            </a> */}
             <a href="https://www.facebook.com/pitstopcarservice" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="Facebook">
               <FacebookIcon />
             </a>

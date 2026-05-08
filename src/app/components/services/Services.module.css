@@ -72,6 +72,10 @@
   letter-spacing: 0.15em;
 }
 
+.dragDiv{
+  display: none;
+}
+
 /* tablet: 4 -> 2 colunas */
 @media (max-width: 1100px) {
   .servicesGrid {
@@ -81,7 +85,39 @@
 
 /* mobile: 2 -> 1 coluna */
 @media (max-width: 600px) {
+
   .servicesGrid {
-    grid-template-columns: 1fr;
+    display: flex; 
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 1.5em 10vw;
+    
+    scrollbar-width: none;
   }
+  .servicesGrid::-webkit-scrollbar{
+    display: none;
+  }
+
+  .serviceCard {
+    min-width: 100%;
+  }
+
+  .dragDiv{
+    margin-top: 2em;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .dragDiv span{
+    text-transform: uppercase;
+    font-size: .75em;
+    color: var(--muted);
+  }
+
+
 }

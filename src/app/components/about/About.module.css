@@ -105,4 +105,11 @@
   .aboutGrid {
     grid-template-columns: 1fr;
   }
+
+  .aboutStats {
+    grid-template-columns: 1fr;
+    justify-self: center;
+    text-align: center;
+    gap: 2.5em;
+  }
 }

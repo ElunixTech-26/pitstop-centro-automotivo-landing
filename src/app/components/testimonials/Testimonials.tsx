@@ -2,32 +2,40 @@
 
 import { useEffect, useRef } from "react";
  import styles from "./Testimonials.module.css";
-import { Star } from "react-bootstrap-icons";
+import { Star, StarFill } from "react-bootstrap-icons";
 
 const testimonials = [
   {
-    initials: "MC",
-    text: "Levei meu carro com um problema que outras oficinas não resolveram. A equipe identificou em minutos e corrigiu no mesmo dia. Ficou perfeito.",
-    name: "Marcos Corrêa",
-    role: "Cliente desde 2021",
+    initials: "RC",
+    text: "Realizei a troca dos quatro pneus do meu carro, fui muito bem atendido, uma experiência bem bacana. Um ótimo serviço prestado pelos colaboradores, obrigado pelo atendimento, sucesso!!!",
+    name: "Ruan Costa"
   },
   {
-    initials: "JR",
-    text: "Trabalho sério e sem enrolação. Fizeram revisão completa na minha Hilux e explicaram cada item. Preço justo e atendimento impecável.",
-    name: "Juliana Ribeiro",
-    role: "Cliente desde 2019",
+    initials: "BA",
+    text: "Meu marido e eu fomos hoje no Pit Stop e só temos elogios. Equipe de primeira, muito simpáticos, prestativos e preço justo. Excelente serviço e tudo feito com muito capricho.",
+    name: "Bruna Andrade"
   },
   {
-    initials: "RS",
-    text: "Indicação certeira. Tenho um Audi e eles dominam os importados. Preço muito melhor que a concessionária, com a mesma qualidade técnica.",
-    name: "Rafael Soares",
-    role: "Cliente desde 2023",
+    initials: "JD",
+    text: "Ótimo atendimento e serviço de qualidade",
+    name: "João Vitor Doria"
+  },
+  {
+    initials: "LD",
+    text: "Muitas opções de rodas e pneus",
+    name: "Leandro Dias"
+  },
+  {
+    initials: "CB",
+    text: "Lugar ótimo, pessoal muito atencioso.",
+    name: "Cristhian Bueno"
   },
 ];
 
 export default function Testimonials() {
   const gridRef = useRef<HTMLDivElement>(null);
 
+  // Mantemos apenas a animação de reveal de quando o usuário chega na seção
   useEffect(() => {
     const elements = gridRef.current?.querySelectorAll(`.${styles.testimonialCard}`);
     if (!elements) return;
@@ -60,25 +68,54 @@ export default function Testimonials() {
           Clientes <span className="accent">Satisfeitos</span>
         </h2>
 
-        <div className={styles.testimonialsGrid} ref={gridRef}>
-          {testimonials.map(({ initials, text, name, role }) => (
-            <div key={name} className={styles.testimonialCard}>
-              <div className={styles.quoteMark}>&ldquo;</div>
-              <div className={styles.stars}>
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} />
-                ))}
-              </div>
-              <p className={styles.testimonialText}>{text}</p>
-              <div className={styles.testimonialPerson}>
-                <div className={styles.avatar}>{initials}</div>
-                <div>
-                  <div className={styles.personName}>{name}</div>
-                  <div className={styles.personRole}>{role}</div>
+        {/* Container que esconde o que vaza para fora */}
+        <div className={styles.carouselContainer} ref={gridRef}>
+          {/* A pista que vai se mover */}
+          <div className={styles.carouselTrack}>
+            
+            {/* GRUPO 1 */}
+            <div className={styles.carouselGroup}>
+              {testimonials.map(({ initials, text, name }) => (
+                <div key={`g1-${name}`} className={styles.testimonialCard}>
+                  <div className={styles.quoteMark}>&ldquo;</div>
+                  <div className={styles.stars}>
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <StarFill key={i} />
+                    ))}
+                  </div>
+                  <p className={styles.testimonialText}>{text}</p>
+                  <div className={styles.testimonialPerson}>
+                    <div className={styles.avatar}>{initials}</div>
+                    <div>
+                      <div className={styles.personName}>{name}</div>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
+
+            {/* GRUPO 2 (Clone perfeito para o loop infinito) */}
+            <div className={styles.carouselGroup}>
+              {testimonials.map(({ initials, text, name }) => (
+                <div key={`g2-${name}`} className={styles.testimonialCard}>
+                  <div className={styles.quoteMark}>&ldquo;</div>
+                  <div className={styles.stars}>
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <StarFill key={i} />
+                    ))}
+                  </div>
+                  <p className={styles.testimonialText}>{text}</p>
+                  <div className={styles.testimonialPerson}>
+                    <div className={styles.avatar}>{initials}</div>
+                    <div>
+                      <div className={styles.personName}>{name}</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+          </div>
         </div>
       </div>
     </section>

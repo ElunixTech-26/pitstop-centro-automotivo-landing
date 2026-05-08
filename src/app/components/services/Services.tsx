@@ -3,12 +3,17 @@
 import { useEffect, useRef } from "react";
 import {
   ArrowRepeat,
+  ArrowRight,
   Brush,
+  Bullseye,
+  CarFront,
   Compass,
+  DashCircleDotted,
   GearWideConnected,
   Hammer,
   LightningChargeFill,
   RecordCircle,
+  ShieldCheck,
   Speedometer2,
 } from "react-bootstrap-icons";
 import styles from "./Services.module.css";
@@ -28,9 +33,9 @@ const services = [
   },
   {
     id: "03",
-    Icon: Speedometer2,
-    title: "Reparo de Motor",
-    description: "Retífica, revisão geral e correção de falhas com diagnóstico computadorizado preciso.",
+    Icon: Bullseye, // ou ShieldCheck — sugestões abaixo
+    title: "Conserto de Pneus Cortados",
+    description: "Reparo profissional de pneus furados ou cortados com vulcanização.",
   },
   {
     id: "04",
@@ -58,7 +63,7 @@ const services = [
   },
   {
     id: "08",
-    Icon: Hammer,
+    Icon: CarFront,
     title: "Chapeação",
     description: "Reparo de lataria, funilaria e correção de avarias, seu carro como saiu da concessionária.",
   },
@@ -70,7 +75,7 @@ const services = [
   },
   {
     id: "10",
-    Icon: Hammer,
+    Icon: ShieldCheck,
     title: "Revisão Preventiva",
     description: "Checklist completo de itens críticos antes de viagens, com laudo escrito e fotos do diagnóstico.",
   },
@@ -122,6 +127,10 @@ export default function Services() {
               <p className={styles.serviceDesc}>{description}</p>
             </div>
           ))}
+        </div>
+        <div className={`${styles.dragDiv} md:hidden`}>
+          <span>Arraste para o lado</span>
+          <ArrowRight />
         </div>
       </div>
     </section>
