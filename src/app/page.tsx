@@ -8,6 +8,7 @@ import TrustBar from "./components/authority/TrustBar";
 import WhatsAppFloat from "./components/whatsapp/WhatsAppFloat";
 import WhyUs from "./components/benefits/WhyUs";
 import Services from "./components/services/Services";
+import Faq from "./components/faq/Faq";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <WhyUs />
         <Testimonials />
         <About />
+        <Faq />
         <FinalCta />
       </main>
       <Footer />
