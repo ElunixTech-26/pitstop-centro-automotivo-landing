@@ -71,6 +71,9 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large" }
   },
+    verification: {
+    google: 'i6lqgXfI-yn1EEXf7ez2DpZtEHO34BKidZ0drddqGlo', 
+  },
   manifest: "/manifest.json",
   icons: { icon: "/favicon.ico", apple: "/apple-icon.png" }
 };

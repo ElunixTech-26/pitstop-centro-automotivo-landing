@@ -8,32 +8,32 @@ const faqs = [
   {
     question: "Quanto tempo demora um alinhamento e balanceamento?",
     answer:
-      "Em média 40 minutos para alinhamento e balanceamento completos. Se você nos chamar pelo WhatsApp antes de vir, deixamos tudo preparado para atender no horário marcado, sem fila.",
+      "Em média 40 minutos pros dois juntos. Se você vier pelo WhatsApp antes, a gente já deixa separado e te atende no horário combinado, sem precisar ficar esperando.",
   },
   {
     question: "Vocês fazem orçamento na hora? Cobra alguma coisa?",
     answer:
-      "Sim, o orçamento é feito na hora e é totalmente gratuito, sem compromisso. Você só fecha o serviço se quiser, e só pagamos quando o trabalho estiver concluído e aprovado por você.",
+      "Sim, e é de graça, sem compromisso nenhum. Você olha o que foi encontrado, decide se fecha ou não, e só paga quando o serviço estiver pronto e aprovado por você.",
   },
   {
-    question: "E se eu fechar o orçamento e descobrirem que precisa mais coisa?",
+    question: "E se aparecer alguma coisa a mais durante o serviço?",
     answer:
-      "Nunca executamos um serviço fora do orçamento sem te avisar. Se durante o reparo identificarmos algo a mais, paramos, te ligamos, explicamos o que foi encontrado e só seguimos com sua autorização. Sem surpresa na hora de pagar.",
+      "A gente para tudo e te liga antes de fazer qualquer coisa. Explica o que foi encontrado, passa o valor, e só segue com a sua aprovação. Nada é feito fora do combinado.",
   },
   {
     question: "Atendem carros importados?",
     answer:
-      "Sim. Trabalhamos com veículos nacionais e importados — europeus, asiáticos e americanos — com scanner multimarca compatível e equipe treinada para diagnóstico em sistemas eletrônicos modernos.",
+      "Sim. Trabalhamos com nacionais e importados europeus, asiáticos, americanos. Temos scanner multimarca e equipe acostumada com os sistemas eletrônicos mais modernos.",
   },
   {
     question: "Qual a região de atendimento?",
     answer:
-      "Atendemos toda a região metropolitana de Porto Alegre: Canoas, Esteio, Cachoeirinha, Sapucaia do Sul, Nova Santa Rita, Gravataí e zona norte da capital. Nossa oficina fica na Av. Getúlio Vargas, 6600 — Canoas/RS.",
+      "Atendemos toda a Grande Porto Alegre: Canoas, Esteio, Cachoeirinha, Sapucaia do Sul, Nova Santa Rita, Gravataí e zona norte da capital. A oficina fica na Av. Getúlio Vargas, 6600 — Canoas/RS.",
   },
   {
-    question: "Como faço pra agendar? Posso só aparecer?",
+    question: "Preciso agendar ou posso só aparecer?",
     answer:
-      "Você pode chegar a qualquer momento no horário de funcionamento, mas o agendamento via WhatsApp é mais rápido: garantimos seu horário, evitamos espera e já separamos as peças se for o caso.",
+      "Pode aparecer sem avisar, a gente atende. Mas pelo WhatsApp é melhor: você garante o horário, evita espera e, se precisar de peça, já deixamos separado com antecedência.",
   },
 ];
 

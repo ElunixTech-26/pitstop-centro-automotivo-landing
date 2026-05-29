@@ -9,7 +9,8 @@ import WhatsAppFloat from "./components/whatsapp/WhatsAppFloat";
 import WhyUs from "./components/benefits/WhyUs";
 import Services from "./components/services/Services";
 import Faq from "./components/faq/Faq";
-
+import CustomProjects from "./components/customProjects/CustomProjects";
+ 
 export default function Home() {
   return (
     <>
@@ -19,6 +20,7 @@ export default function Home() {
         <TrustBar />
         <Services />
         <WhyUs />
+        <CustomProjects />
         <Testimonials />
         <About />
         <Faq />
