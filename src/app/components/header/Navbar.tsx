@@ -26,7 +26,7 @@ export default function Navbar() {
           </li>
         </ul>
         <a
-          href={WHATSAPP_URL}
+          href={WHATSAPP_URL} data-track="navbar"
           aria-label="Falar no WhatsApp"
           target="_blank"
           rel="noopener noreferrer"

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Analytics from "./components/analytics/Analytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -122,8 +123,8 @@ export const localBusinessSchema = {
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "32"
+    "ratingValue": "4.7",
+    "reviewCount": "31"
   },
   "areaServed": [
     { "@type": "City", "name": "Canoas" },
@@ -166,6 +167,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+        <Analytics />
       </body>
     </html>
   );

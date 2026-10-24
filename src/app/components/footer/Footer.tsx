@@ -66,7 +66,7 @@ export default function Footer() {
             <ul>
               <li className="flex items-center gap-2">
                 <Telephone />
-                <a href={`tel:${SITE_CONFIG.phone}`}>{SITE_CONFIG.phone}</a>
+                <a href={`tel:${SITE_CONFIG.phone}`} data-track="rodape">{SITE_CONFIG.phone}</a>
               </li>
               <li className="flex items-center gap-2">
                 <Envelope />
@@ -74,7 +74,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <GeoAlt />
-                <span>{SITE_CONFIG.location}</span>
+                <span>{SITE_CONFIG.address}</span>
               </li>
             </ul>
           </div>
@@ -93,7 +93,7 @@ export default function Footer() {
               <FacebookIcon />
             </a>
             <a   
-            href={WHATSAPP_URL}
+            href={WHATSAPP_URL} data-track="rodape"
             target="_blank"
             rel="noopener noreferrer" className={styles.socialLink} aria-label="WhatsApp">
               <WhatsAppIcon width={18} height={18} />

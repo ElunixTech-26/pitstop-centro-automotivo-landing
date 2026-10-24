@@ -16,7 +16,7 @@ export default function FinalCta() {
         </div>
         <div className={styles.ctaActions}>
           <a
-            href={WHATSAPP_URL}
+            href={WHATSAPP_URL} data-track="cta_final"
             className={styles.btnDark}
             target="_blank"
             rel="noopener noreferrer"
@@ -25,7 +25,7 @@ export default function FinalCta() {
             Chamar no WhatsApp
           </a>
           <div className={styles.ctaInfo}>
-            <a href={`tel:${SITE_CONFIG.phone}`} className={styles.ctaInfoItem}>
+            <a href={`tel:${SITE_CONFIG.phone}`} data-track="cta_final" className={styles.ctaInfoItem}>
               <Phone />
               {SITE_CONFIG.phone}
             </a>

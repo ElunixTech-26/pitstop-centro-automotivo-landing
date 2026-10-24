@@ -18,7 +18,7 @@ export default function Hero() {
           </p>
           <div className={styles.heroCtas}>
             <a   
-              href={WHATSAPP_URL}
+              href={WHATSAPP_URL} data-track="hero"
               aria-label="Falar no WhatsApp"
               target="_blank"
               rel="noopener noreferrer" className="btn btn-primary">

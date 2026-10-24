@@ -5,7 +5,7 @@ import styles from "./WhatsAppFloat.module.css";
 export default function WhatsAppFloat() {
   return (
     <a
-      href={WHATSAPP_URL}
+      href={WHATSAPP_URL} data-track="botao_flutuante"
       className={styles.whatsappFloat}
       aria-label="Falar no WhatsApp"
       target="_blank"

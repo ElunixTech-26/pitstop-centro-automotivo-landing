@@ -126,7 +126,7 @@ export default function CustomProjects() {
 
           <div className={styles.ctaWrap}>
             <a
-              href={WHATSAPP_URL}
+              href={WHATSAPP_URL} data-track="projetos"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"

@@ -4,6 +4,7 @@ export const SITE_CONFIG = {
   description:
     "Suspensão, freios, motor e alinhamento em Canoas. Atendimento especializado para veículos nacionais e importados.",
   location: "Canoas, RS",
+  address: "Av. Getúlio Vargas, 6600, Centro, Canoas/RS, 92010-011",
   since: "Desde 1983",
   phone: "(51) 9828-8971",
   whatsappNumber: "+555198288971",
